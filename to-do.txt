@@ -1,0 +1,17 @@
+sections: 
+	-Profile
+		1) profile pic
+		2) intro
+	-About me
+		1) about me message
+	-Skills
+		1) skills listing and animations for the strength of each skill
+	-Projects
+		1) Ciniscape
+		2) Kalanju
+		3) perromart-shopping-flow
+		4) perromart-checkout-flow
+		 a) pic
+		 b) description
+		 c) tech stack
+		 d) contributions 
