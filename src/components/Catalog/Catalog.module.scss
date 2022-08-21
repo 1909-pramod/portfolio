@@ -1,0 +1,31 @@
+@import '../../styles/variables';
+
+.catalog-container {
+	font-family: $font-exo;
+	color: $secondary-2;
+	text-align: center;
+	opacity: 1;
+	transition: opacity 500ms ease-in-out;
+	@media screen and (max-width: $md) {
+		h1 {
+			font-size: 24px;
+			margin: 5px 0;
+		}
+	}
+}
+
+.catalog-container-loading {
+	opacity: 0;
+}
+
+.catalog-list {
+
+}
+
+.catalog-list-item {
+	padding: 10px 0;
+	cursor: pointer;
+	@media screen and (max-width: $md) {
+		padding: 5px 0;
+	}
+}

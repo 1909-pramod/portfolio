@@ -1,0 +1,106 @@
+@import '../../styles/variables';
+
+.container-ds {
+	height: 100%;
+	width: 100%;
+	position: relative;
+	@media screen and (max-width: $md) {
+		display: none;
+	}
+}
+
+.container-mb {
+	height: 100%;
+	width: 100%;
+	position: relative;
+	@media screen and (min-width: $md) {
+		display: none;
+	}
+}
+
+.scroll-container-ds {
+	width: 60%;
+	height: 100%;
+	background-color: $primary-2;
+	position: relative;
+	transition: width 500ms ease-in-out;
+	z-index: 0;
+}
+
+.scroll-container-mb {
+	width: 100%;
+	height: 55%;
+	background-color: $primary-2;
+	position: relative;
+	transition: height 500ms ease-in-out;
+	z-index: 0;
+}
+
+.curve-ds {
+	display: block;
+	height: 100%;
+	width: 30%;
+	position: absolute;
+	left: 85%;
+	border-radius: 50%;
+	background-color: $primary-2;
+	z-index: -1;
+}
+
+.curve-mb {
+	display: block;
+	height: 40%;
+	width: 100%;
+	position: absolute;
+	top: 80%;
+	border-radius: 50%;
+	background-color: $primary-2;
+	z-index: -1;
+}
+
+.scroll-loading-ds {
+	width: 80%;
+}
+
+.scroll-loading-mb {
+	height: 80%;
+}
+
+.content-ds {
+	position: relative;
+	display: block;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+}
+
+.content-mb {
+	position: relative;
+	display: block;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+}
+
+.catalog-ds {
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 30%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.catalog-mb {
+	display: block;
+	position: absolute;
+	bottom: 40px;
+	width: 100%;
+	height: 40%;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+}
