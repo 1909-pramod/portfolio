@@ -78,6 +78,7 @@ a {
 /* styling classes */
 /* nav styles */
 .rotating-nav {
+  -webkit-backface-visibility: hidden;
   position: fixed;
   top: calc(100vh - 50px);
   left: calc(100vw - 50px);
