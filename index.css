@@ -20,7 +20,7 @@ body {
   min-height: 100vh;
   background-color: var(--black);
   max-width: 100%;
-  overflow-x: hidden;
+  overflow: hidden;
   font-family: 'Anonymous Pro', monospace;
   /* font-weight: 600; */
   color: var(--white);
@@ -78,7 +78,6 @@ a {
 /* styling classes */
 /* nav styles */
 .rotating-nav {
-  -webkit-backface-visibility: hidden;
   position: fixed;
   top: calc(100vh - 50px);
   left: calc(100vw - 50px);
