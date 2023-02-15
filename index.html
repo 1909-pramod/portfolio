@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+		<link rel="stylesheet" href="./index.css" />
+		<script rel="text/js" src="./index.js"></script>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link 
+			href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,700;1,800;1,900&family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Waiting+for+the+Sunrise&display=swap" 
+			rel="stylesheet"
+		>
+		<!-- <link 
+			href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Waiting+for+the+Sunrise&display=swap" 
+			rel="stylesheet"
+		> -->
+	</head>
+	<body onload="init()">
+		<span id="circle" class="circle"></span>
+		<!-- floating navbar -->
+		<div class="rotating-nav">
+			<div id="nav" class="nav-icon flex-center flex-column">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<div id="nav-links" class="page-links">
+				<span>
+					<a href="#home">home</a>
+				</span>
+				<span> 
+					<a href="#skills">skills</a>
+				</span>
+				<span >
+					<a href="#projects">
+						projects
+					</a>
+				</span>
+				<span >
+					<a href="#contact">
+						contact
+					</a>
+				</span>
+			</div>
+		</div>
+		<!-- home section -->
+		<section id="home">
+			<div class="home-container">
+				<div class="text-container">
+					<div class="greeting-container">
+						<span>Hi! I am Pramod,</span>
+					</div>
+					<div class="my-description">  
+						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum, officiis officia quidem laudantium inventore at sapiente. Perferendis unde cumque laudantium eveniet sequi! Mollitia distinctio doloremque ducimus, accusantium similique consequuntur sunt!
+					</div>
+				</div>
+				<div class="profile-image">
+					<img src="./profile.jpg" />
+				</div>
+			</div>
+		</section>
+		<section class="layer-2" id="skills" data-aos="slide-right" data-aos-anchor-placement="center-bottom">
+			skills
+		</section>
+		<section class="layer-3" id="projects" data-aos="slide-left" data-aos-anchor-placement="center-bottom">
+			projects
+		</section>
+		<section class="layer-4" id="contact" data-aos="slide-up" data-aos-anchor-placement="center-bottom">
+			contact
+		</section>
+		<script>
+			AOS.init();
+		</script>
+		</script>
+	</body>
+</html>
