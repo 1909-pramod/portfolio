@@ -78,7 +78,7 @@ a {
 /* styling classes */
 /* nav styles */
 .rotating-nav {
-  position: absolute;
+  position: fixed;
   top: calc(100vh - 50px);
   left: calc(100vw - 50px);
   width: 40px;
