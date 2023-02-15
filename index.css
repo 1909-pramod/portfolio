@@ -231,6 +231,7 @@ a {
       grid-template-rows: 40% 50%;
       grid-template-columns: none;
       gap: 2%;
+      padding: 2rem;
     }
     .profile-image {
       grid-row: 1;
