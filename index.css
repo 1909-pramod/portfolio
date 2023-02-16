@@ -17,9 +17,10 @@
 body {
   position: relative;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   background-color: var(--black);
-  overflow: hidden;
+  max-width: 100%;
+  /* overflozw: hidden; */
   font-family: 'Anonymous Pro', monospace;
   /* font-weight: 600; */
   color: var(--white);
@@ -74,6 +75,10 @@ a {
   z-index: 60;
 }
 
+.minimal-opacity > section {
+  opacity: 0.3;
+}
+
 /* styling classes */
 /* nav styles */
 .rotating-nav {
@@ -85,6 +90,7 @@ a {
   background-color: var(--white);
   z-index: 85;
   border-radius: 50%;
+  transition: all 0.3s ease-in-out;
 }
 
 .nav-icon {
@@ -150,6 +156,10 @@ a {
   transform: rotate(0) translateX(0) translateY(0);
   transition: all 0.3s ease-in-out;
 }
+
+/* .rotating-nav:has(> .is-active) {
+  box-shadow: -52px -42px 0 65px #343434d6;
+} */
 
 .page-links.is-active {
   visibility: visible;
