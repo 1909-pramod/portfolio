@@ -50,6 +50,11 @@ a {
 
 /* resusable classes*/
 
+.heading {
+  font-family: 'waiting for the sunrise', cursive;
+  font-size: 34px;
+}
+
 .flex-center {
   display: flex;
   justify-content: center;
@@ -260,11 +265,6 @@ a {
   gap: 10px;
 }
 
-.skill-heading {
-  font-family: 'waiting for the sunrise', cursive;
-  font-size: 34px;
-}
-
 .skill-bar {
   width: 100%;
   display: block;
@@ -303,38 +303,146 @@ a {
   top: 12px;
   left: 5px;
 }
-
-@media screen and (max-width: 1000px) {
-    .home-container {
-      grid-template-rows: 40% 50%;
-      grid-template-columns: none;
-      gap: 2%;
-      padding: 2rem;
-    }
-    .profile-image {
-      grid-row: 1;
-      display: flex;
-      justify-content: center;
-    }
-    .profile-image img {
-      width: 300px;
-    }
-    .circle {
-      display: none;
-    }
-    .skill-container {
-      grid-template-columns: 100%;
-    }
-    .skill-globe {
-      display: none;
-    }
-}
-
+/* projects container */
 .layer-3 {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   background-color: var(--purple-3);
+}
+
+.swiper {
+  height: 100%;
+  width: 100%;
+}
+
+.swiper-slide {
+  width: 100%;
+  height: 100%;
+  padding: 2.5rem;
+}
+
+.swiper-slide-wrapper {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  background-color: var(--purple-1);
+  display: grid;
+  grid-template-columns: 30% 70%;
+  gap: 10px;
+  overflow: hidden;
+}
+
+.project-image {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-rows: 30% 70%;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.project-image > div {
+  width: 100%;
+  height: 100%;
+}
+
+.project-image .image {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.project-title {
+  font-size: 32px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-description {
+  border-left: 1px solid var(--white);
+  padding: 2rem 1rem;
+  line-height: 18px;
+}
+
+.project-description .description {
+  padding: 10px;
+}
+
+.project-description .description h3 {
+  margin-bottom: 10px;
+}
+
+.project-description .description p {
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.project-description .description ul {
+  margin-left: 15px;
+}
+
+
+
+@media screen and (max-width: 1000px) {
+  .home-container {
+    grid-template-rows: 40% 50%;
+    grid-template-columns: none;
+    gap: 2%;
+    padding: 2rem;
+  }
+  .profile-image {
+    grid-row: 1;
+    display: flex;
+    justify-content: center;
+  }
+  .profile-image img {
+    width: 300px;
+  }
+  .circle {
+    display: none;
+  }
+  .skill-container {
+    grid-template-columns: 100%;
+  }
+  .skill-globe {
+    display: none;
+  }
+  
+  .swiper-slide-wrapper {
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 90%;
+    gap: 5px;
+    overflow-y: hidden;
+  }
+  .project-description {
+    border-left: none;
+    padding: 1rem 0.5rem;
+    line-height: 18px;
+  }
+  
+  .project-description .description {
+    padding: 5px;
+  }
+  
+  .project-description .description h3 {
+    margin-bottom: 5px;
+  }
+  
+  .project-description .description p {
+    text-align: left;
+    margin-bottom: 5px;
+  }
+  
+  .project-description .description ul {
+    margin-left: 15px;
+  }
 }
 
 

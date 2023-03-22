@@ -126,6 +126,8 @@ function init() {
     elements[i].style.transform = `rotate(${((lengthOfElements - i -1)) * angleDiff}deg) translateY(${(lengthOfElements - i - 1) * -13}px) translateX(${(lengthOfElements - i - 1) * 5}px)`
   }
 
+
+  // skill progressbars
   const skillBarsContainer = document.getElementById('skill-bars');
   skills.forEach(function(skill) {
     const skillBar = document.createElement('div');
@@ -146,15 +148,13 @@ function init() {
     const progress = document.createElement('div');
     progress.classList.add('progress');
     progress.style.backgroundColor = skill.backgroundColor;
-    // const skillPercent = document.createElement('div');
-    // skillPercent.classList.add('skill-percent'); 
-    // skillPercent.innerText = `${skill.percent}%`;
     progressContainer.appendChild(progress);
-    // progressContainer.appendChild(skillPercent);
     skillBar.appendChild(titleContainer);
     skillBar.appendChild(progressContainer);
     skillBarsContainer.appendChild(skillBar);
   })
+
+
   window.onscroll = function () {
     const height = window.innerHeight;
     const scrollTop = window.scrollY;
@@ -169,24 +169,36 @@ function init() {
       }
     }
   }
+  // swipper initialization
+  const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
   
 
   // mouse tracker
-  var mouseX = 0, mouseY = 0;
-  var xp = 0, yp = 0;
+  // var mouseX = 0, mouseY = 0;
+  // var xp = 0, yp = 0;
 
-  document.onmousemove = function(e) {
-    mouseX = e.pageX - 30;
-    mouseY = e.pageY - 30; 
-  }
+  // document.onmousemove = function(e) {
+  //   mouseX = e.pageX - 30;
+  //   mouseY = e.pageY - 30; 
+  // }
 
-  setInterval(function(){
-    xp += ((mouseX - xp)/6);
-    yp += ((mouseY - yp)/6);
-    var element = document.getElementById('circle')
-    element.style.left = xp + 'px';
-    element.style.top = yp + 'px'
-  }, 20);
+  // setInterval(function(){
+  //   xp += ((mouseX - xp)/6);
+  //   yp += ((mouseY - yp)/6);
+  //   var element = document.getElementById('circle')
+  //   element.style.left = xp + 'px';
+  //   element.style.top = yp + 'px'
+  // }, 20);
 
   // skill text globe
   const myTags = skills.map(skill => skill.skill);
