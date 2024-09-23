@@ -50,6 +50,10 @@ a {
 
 /* resusable classes*/
 
+.image > img {
+  width: fit-content;
+}
+
 .heading {
   font-family: 'waiting for the sunrise', cursive;
   font-size: 34px;
@@ -464,6 +468,7 @@ a {
 .experience-image {
   height: 150px;
   width: 150px;
+  background-color: white;
 }
 
 .experience-image  img {

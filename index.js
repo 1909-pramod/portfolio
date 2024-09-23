@@ -62,7 +62,7 @@ const skills = [
   },
   {
       "skill": "Docker",
-      "percent": 50,
+      "percent": 90,
       "backgroundColor": "violet"
   },
   {
@@ -82,7 +82,7 @@ const skills = [
   },
   {
       "skill": "AWS",
-      "percent": 60,
+      "percent": 80,
       "backgroundColor": "violet"
   },
   {
@@ -94,6 +94,11 @@ const skills = [
       "skill": "Stripe",
       "percent": 50,
       "backgroundColor": "violet"
+  },
+  {
+    "skill": "kubernetes",
+    "percent": 80,
+    "backgroundColor": "violet"
   }
 ]
 
