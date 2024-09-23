@@ -50,6 +50,10 @@ a {
 
 /* resusable classes*/
 
+.mobile-visible {
+  display: none !important;
+}
+
 .image > img {
   width: fit-content;
 }
@@ -400,6 +404,14 @@ a {
   background-color: var(--purple-4);
 }
 
+.layer-5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--purple-4);
+}
+
 .final-subsection {
   padding: 10px;
   width: 100%;
@@ -553,6 +565,12 @@ a {
 
 
 @media screen and (max-width: 1000px) {
+  .mobile-hidden {
+    display: none;
+  }
+  .mobile-visible {
+    display: block !important;
+  }
   .home-container {
     grid-template-rows: 40% 50%;
     grid-template-columns: none;
